@@ -1,0 +1,20 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  margin-bottom: 20px;
+}
+
+div.btn-group-vertical {
+  margin: 0 auto; 
+  text-align: center;
+  width: inherit;
+  display: inline-block;
+}
+
+div.jumbotron {
+  
+}

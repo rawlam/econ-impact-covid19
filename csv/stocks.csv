@@ -1,0 +1,26 @@
+symbol,name,sector
+COP,ConocoPhillips,En
+SHEL,Shell plc,En
+CVX,Chevron Corporation,En
+XOM,Exxon Mobil Corporation,En
+TTE,TotalEnergies SE,En
+MA,Mastercard Incorporated,Fr
+JPM,JPMorgan Chase & Co.,Fr
+V,Visa Inc.,Fr
+JPM-PC,JPMorgan Chase & Co.,Fr
+BRK-B,Berkshire Hathaway Inc.,Fr
+JNJ,Johnson & Johnson,Hc
+MRK,"Merck & Co., Inc.",Hc
+LLY,Eli Lilly and Company,Hc
+NVO,Novo Nordisk A/S,Hc
+UNH,UnitedHealth Group Incorporated,Hc
+MSFT,Microsoft Corporation,IT
+TSM,Taiwan Semiconductor Manufacturing Company Limited,IT
+AVGO,Broadcom Inc.,IT
+AAPL,Apple Inc.,IT
+NVDA,NVIDIA Corporation,IT
+PSA,Public Storage,RE
+CCI,Crown Castle Inc.,RE
+EQIX,"Equinix, Inc.",RE
+AMT,American Tower Corporation,RE
+PLD,"Prologis, Inc.",RE

@@ -1,0 +1,201 @@
+<!-- Source code -->
+<!-- https://getbootstrap.com/docs/5.0/examples/dashboard/ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>COVID-19 Dashboard</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" style="background-color: #3422fb;">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Dashboard</a>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <h4>Sectors</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <button class="button-54" id="button1" role="button">
+              Energy
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="button-54" id="button2" role="button">
+              Finance
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="button-54" id="button3" role="button">
+              Healthcare
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="button-54" id="button4" role="button">
+              Information Technology
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="button-54" id="button5" role="button">
+              Real Estate
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">COVID-19: Which Sectors Were Bullish? Which Were Bears?</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <select id="selDataset" onchange="optionChanged1(this.value)">Start Date</select>
+          <select id="selDataset2" onchange="optionChanged2(this.value)">End Date</select>
+        </div>
+      </div>
+
+
+      <h3 id="sector">Energy Sector</h3>
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <h3>US COVID-19 New Cases</h3>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <select id="selDataset3" onchange="optionChanged3(this.value)">Start Date</select>
+        <select id="selDataset4" onchange="optionChanged4(this.value)">End Date</select>
+      </div>
+      <canvas class="my-4 w-100" id="myChart2" width="900" height="450"></canvas>
+     
+
+      <h2>Summary Statistics</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm" id="summary-table">
+          <thead>
+            <tr>
+              <th>Statistic</th>
+              <th id="header1">Sector</th>
+              <th id="header2">Stock 1</th>
+              <th id="header3">Stock 2</th>
+              <th id="header4">Stock 3</th>
+              <th id="header5">Stock 4</th>
+              <th id="header6">Stock 5</th>
+              <th id="header7">COVID-19</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Max</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Min</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mean</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Median</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mode</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Range</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Standard Deviation</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+
+
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard2.js"></script>
+  </body>
+</html>

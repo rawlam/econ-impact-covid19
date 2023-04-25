@@ -1,0 +1,26 @@
+stock
+-
+symbol_id varchar(255) PK
+name varchar(255)
+sector_id varchar(255) FK >- sector.sector_id
+
+sector
+-
+sector_id varchar(255) PK
+name varchar(255)
+
+quotes
+-
+date varchar(255)
+symbol_id varchar(255) FK >- stock.symbol_id
+open float
+
+-------------------------------------------------
+
+covid_19_data
+-
+Date_reported varchar(255) 
+New_cases int
+Cumulative_cases int
+New_deaths int
+Cumulative_deaths int

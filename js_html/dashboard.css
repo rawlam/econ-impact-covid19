@@ -1,0 +1,96 @@
+body {
+  font-size: .875rem;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+h4 {
+  margin-top: 4.8rem;
+  margin-left: 1.75rem;
+  padding-bottom: .25rem;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.534);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+/* 
+ * Buttons 
+ */
+
+/* button-54 sourced from https://copy-paste-css.com */
+.sidebar .button-54 {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  padding: 0 12px;
+  line-height: 20px;
+  height: 30px;
+  max-height: 30px;
+  background: none;
+  font-weight: 700;
+  border: 0;
+  border-radius: 1rem;
+  color: #0700cf92;
+  transition-timing-function: ease-in-out;
+  transition-property: background;
+  transition-duration: 150ms;
+  box-shadow: none;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.sidebar .button-54:active,
+.sidebar .button-54:focus {
+  background-color: rgb(227, 227, 253);
+  color: #0700cfd1;
+}
+.sidebar .button-54:hover {
+  color: #0700cfd1;
+}
+
