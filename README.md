@@ -20,24 +20,31 @@ For each sector:
 ## Scope of Work
 
 ## Data Pipeline, (Marco, Jimmy & Ronald)
-Fetching Data through API
-Clean, transform and merge data
-Create CSV file
-Create Entity Relational Diagram
-Load data into Postgres
+* Fetching Data through API
+* Clean, transform and merge data
+* Create CSV file
+* Create Entity Relational Diagram
+* Load data into Postgres
 
 ## Data Analysis (Ronald)
-Exploration
-Identifying 3-4 key insights answering our initial questions
-Formulating conclusions and determine potential correlational relationships
+* Exploration
+* Identifying 3-4 key insights answering our initial questions
+* Formulating conclusions and determine potential correlational relationships
 
 ## Visualization (Ronald) 
-Create Javascript and HTML files
-Create presentation
+* Create Javascript and HTML files
+* Create presentation
 
 ## Presentation
 
+## COVID-19 Cases
+
+![chart 1](images/covid-19-chart.png)
+
 ## IT Sector:
+
+![graph 1](images/IT_sector_chart.png)
+![stats 1](images/IT_statistics.png)
 
 Microsoft (MSFT): In February and March 2020, MSFT's stock price fell by around 20% as the pandemic led to widespread economic uncertainty. However, as demand for remote work and online services grew, MSFT's stock price recovered and hit all-time highs in September 2020.
 
@@ -53,6 +60,8 @@ In general, most technology stocks experienced a dip in stock prices in March 20
 
 ## Real Estate Sector:
 
+![graph 2](images/RE_sector_chart.png)
+
 Prologis (PLD): Between February and March 2020, PLD saw its stock price drop from around $95 to $70, a decline of over 25%, as the pandemic spread across the US and caused widespread uncertainty in the market.
 
 American Tower (AMT): In late February and early March 2020, AMT's stock price fell from around $250 to $190, a drop of about 25%, due to concerns about the pandemic's impact on the economy and the company's business.
@@ -66,6 +75,8 @@ Public Storage (PSA): PSA's stock price initially saw a sharp decline in March 2
 Conclusion: The COVID-19 pandemic had a significant impact on the stock prices of Prologis, American Tower, Equinix, Crown Castle International, and Public Storage, with most of these companies experiencing significant declines in early 2020. However, the pandemic's impact on these companies varied, with some recovering more quickly than others, and some ultimately benefiting from increased demand for their services.
 
 ## Banking Sector:
+
+![graph 3](images/finance_sector_chart.png)
 
 BRK-B (Berkshire Hathaway Inc. Class B): The stock fell sharply in February and March 2020, along with the broader market, as investors panicked over the potential impact of the pandemic. However, the stock has since rebounded and reached new all-time highs in early 2021.
 
@@ -81,6 +92,8 @@ Conclusion: The pandemic had a significant impact on the stock prices of these c
 
 ## Healthcare Sector:
 
+![graph 4](images/healthcare_sector_chart.png)
+
 COVID provided growth and expansion in healthcare industries due to the increase in demand of certain medical products and services.
 
 Many pharmaceutical companies have been developing COVID 19 vaccines. Vaccines were bought by many different countries which drives the revenue and profit of the pharmaceutical companies.
@@ -95,6 +108,8 @@ For example, UnitedHealth Group is a health insurance and healthcare services co
 We can see that from Jan 2021 to 2021 March, their stock dropped by 10%, this is because of the release of their earnings reports for 2020, which showed a decline in revenue compared to the previous year. This is caused by delay of distribution during the starting of COVID in March 2020 and also lockdowns in 2020. Which caused the revenue to decrease and go down. But after that, as demand for distribution of COVID vaccine increases, the stock is in an upwards trend all the way to Nov 2022. Due to interest rates and other reasons, the stock price dropped from the end of 2022 to now.
 
 ## Energy Sector
+
+![graph 5](images/energy_sector_chart.png)
 
 So how did energy stocks perform through each COVID-19 wave?
 
